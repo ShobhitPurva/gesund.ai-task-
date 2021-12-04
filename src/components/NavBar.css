@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --navbar-height: 5.2083vw !important;
+    --background-color: #252D3A !important;
+    --hover-color: #191F28 !important;
+    --bottom-color: #424C5D !important;
+    --font-color: #FFFFFF !important;
+    --drop-button-color: #535D6D !important;
+    --nav-font-size: 0.911vw !important;
+    --nav-button-paddingHorizontal: 1.0742vw !important;
+    --nav-button-paddingVertical:  1.0416vw !important;
+    --noto-sansfont: 'Noto Sans', sans-serif;
+    --roboto-sansfont: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: var(--background-color);
+    color: var(--font-color);    
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* height: var(--navbar-height); */
+    padding: 14px 0px
+}
+.navbar__left{
+    flex: 0.2;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+.navbar__middle{
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+}
+
+.navbar__button{
+    padding: 16.5px 16px ;
+    font-size: var(--nav-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: 0.7s;
+    font-family: var(--noto-sansfont);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0px 3px;
+    letter-spacing: 0.25px;
+    transition: all 250ms ease-in; 
+
+}
+.navbar__button:hover{
+    transition: all 250ms ease-in; 
+  
+}
+
+.navbar__buttonText {
+    padding: 4px;
+}
+
+/* .navbar__space {
+    display: flex;
+    flex: 0.4;
+} */
+
+.navbar__right{
+   
+    flex: 0.2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.navbar__rightButton{
+    margin: 0px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px;
+    border: 2px solid #707986;
+    border-radius: 8px;
+    background-color: var(--drop-button-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+.navbar__rightButton > p {
+    color: var(--font-color);
+    margin: 0px 6px;
+}
+
+.navbar__button:hover {
+    background-color: var(--hover-color)
+}   

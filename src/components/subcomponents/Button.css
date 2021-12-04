@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --navbar-height: 5.2083vw !important;
+    --background-color: #252D3A !important;
+    --smallCard-color: #3B424E !important;
+    --hover-color: #191F28 !important;
+    --bottom-color: #424C5D !important;
+    --font-color: #FFFFFF !important;
+    --drop-button-color: #535D6D !important;
+    --background-button:#7C8189 !important;
+    --nav-font-size: 0.911vw !important;
+    --nav-button-paddingHorizontal: 1.0742vw !important;
+    --nav-button-paddingVertical:  1.0416vw !important;
+    --noto-sansfont: 'Noto Sans', sans-serif;
+    --roboto-sansfont: 'Roboto', sans-serif;
+    --fontDark-color: #92969D !important;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    /* background-color: var(--background-button); */
+    background-color: var(--background-button);
+    margin-right: 6px;
+    box-shadow: -5px -5px 20px rgba(49, 69, 106, 0.26),  5px 5px 20px  rgba(0, 0, 0, 0.144);
+    transition: all 230ms ease-in;
+}
+.button:hover {
+    transition: all 230ms ease-in; 
+    transform: scale(1.05);
+}
+
+.button > p {
+    font-family: var(--roboto-sansfont);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--font-color);
+}

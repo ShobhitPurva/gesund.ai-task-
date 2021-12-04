@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --navbar-height: 5.2083vw !important;
+    --background-color: #252D3A !important;
+    --smallCard-color: #3B424E !important;
+    --hover-color: #191F28 !important;
+    --bottom-color: #424C5D !important;
+    --font-color: #FFFFFF !important;
+    --drop-button-color: #535D6D !important;
+    --nav-font-size: 0.911vw !important;
+    --nav-button-paddingHorizontal: 1.0742vw !important;
+    --nav-button-paddingVertical:  1.0416vw !important;
+    --noto-sansfont: 'Noto Sans', sans-serif;
+    --roboto-sansfont: 'Roboto', sans-serif;
+    --fontDark-color: #92969D !important;
+}
+
+.mediumCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #424C5D;
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 0px 0px 24px 12px;
+    transition: all 200ms ease-in;
+
+}
+.mediumCard:hover {
+    transition: all 200ms ease-in; 
+    transform: scale(1.06);
+    border: 2px solid #34C5F3
+}
+
+.mediumCard__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 21px 19.5px 21px 19.5px;
+}
+
+.mediumCard__top{
+    display: flex;
+    font-size: 16px;
+    font-family: var(--noto-sansfont);
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px;
+    color: var(--font-color);
+    margin-bottom: 4px;
+
+}
+
+.mediumCard__middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.mediumCard__middle > h2{
+    font-family: var(--noto-sansfont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 46px;
+    color: var(--font-color);
+    margin-right: 4px;
+
+}
+
+.mediumCard__bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.mediumCard__bottom > p{
+    font-family: var(--noto-sansfont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #b0b8c5;
+    padding-right: 5px;
+}
+.mediumCard__bottom > h4{
+    font-family: var(--noto-sansfont);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--font-color);
+}
+

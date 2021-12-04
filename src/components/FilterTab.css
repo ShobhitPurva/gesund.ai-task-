@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --navbar-height: 5.2083vw !important;
+    --background-color: #252D3A !important;
+    --hover-color: #191F28 !important;
+    --bottom-color: #424C5D !important;
+    --font-color: #FFFFFF !important;
+    --drop-button-color: #535D6D !important;
+    --nav-font-size: 0.911vw !important;
+    --nav-button-paddingHorizontal: 1.0742vw !important;
+    --nav-button-paddingVertical:  1.0416vw !important;
+    --noto-sansfont: 'Noto Sans', sans-serif;
+    --noto-sansfont: 'Roboto', sans-serif;
+}
+
+.filterTab { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #424C5D;
+    box-sizing: border-box;
+    background-color: var(--background-color)
+}
+.filterTab__container {
+    display: flex;
+    flex: 1;
+    
+}
+.filterTab__containerLeft{
+    display: flex;
+    flex: 0.56;
+    
+
+
+}
+.filterTab__containerLeft > select{
+ 
+    display: flex;
+    flex: 1;
+    background-color: var(--drop-button-color);
+    margin: 18px 12px 24px 24px;
+    height: 56px;
+    border-radius: 6px;
+    border: 2px solid#424C5D;
+    box-sizing: border-box;
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.filterTab__containerRight{
+    display: flex;
+    flex: 0.5;
+    
+}
+.filterTab__containerRight > select{
+    display: flex;
+    flex: 1;
+    background-color: var(--drop-button-color);
+    margin: 18px 24px 0px 12px;
+    height: 56px;   
+    border-radius: 6px;
+    border: 2px solid#424C5D;
+    box-sizing: border-box;
+    color: var(--font-color); 
+    cursor: pointer;  
+
+}
+
+.filterTab__containerFilter{
+    margin: 18px 24px 18px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterTab__containerFilter > button{
+    background: #1D9E76;
+    border-radius: 6px;
+    height: 56px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease-in; 
+    transform: scale(1.06);
+
+}
+.filterTab__containerFilter > button:hover{
+    transition: all 250ms ease-in; 
+    transform: scale(1.06);
+
+}
