@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import CardHeader from './CardHeader';
+import axios from '../../axios'
 import "./Prediction.css"
 import PredictionCard from './PredictionCard';
 import PushPinOutlinedIcon from '@mui/icons-material/PushPinOutlined';
@@ -7,6 +8,20 @@ import FilterAltRoundedIcon from '@mui/icons-material/FilterAltRounded';
 import "./Prediction.css";
 
 function Prediction() {
+    const[predictionCard , setPredictionCard ] = useState([]);
+    
+    useEffect(() =>{
+      async function fetchPosts(){
+        const response = await axios.get('/test/cards');
+        setPredictionCard (response.data);
+        return response;
+      } 
+      
+      fetchPosts();
+    }, []);
+  
+    console.log(predictionCard );
+
     return (
         <div className="prediction">
                 <div className="predictionHeader__container">
@@ -26,48 +41,16 @@ function Prediction() {
                 </div>
 
             <div className="prediction__container">
-                <PredictionCard 
-                    groundTruth="Pneumonia"
-                    prediction="Normal" 
-                    loss="1.32" 
-                    confidence="0.43"
-                    img="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
-                />
-                <PredictionCard 
-                    groundTruth="Pneumonia"
-                    prediction="Normal" 
-                    loss="1.32" 
-                    confidence="0.43"
-                    img="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
-                />
-                <PredictionCard 
-                    groundTruth="Pneumonia"
-                    prediction="Normal" 
-                    loss="1.32" 
-                    confidence="0.43"
-                    img="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
-                />
-                <PredictionCard 
-                    groundTruth="Pneumonia"
-                    prediction="Normal" 
-                    loss="1.32" 
-                    confidence="0.43"
-                    img="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
-                />
-                <PredictionCard 
-                    groundTruth="Pneumonia"
-                    prediction="Normal" 
-                    loss="1.32" 
-                    confidence="0.43"
-                    img="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
-                />
-                <PredictionCard 
-                    groundTruth="Pneumonia"
-                    prediction="Normal" 
-                    loss="1.32" 
-                    confidence="0.43"
-                    img="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
-                />
+                {predictionCard.map(({url, groundtruth, prediction, loss, confidence}) =>(
+                    <PredictionCard 
+                        groundtruth={groundtruth}
+                        prediction={prediction}
+                        loss={loss}
+                        confidence={confidence}
+                        url={url}
+
+                    />
+                ))}
             </div>
         </div>
     )

@@ -26,7 +26,7 @@
     border-radius: 8px;
     margin: 0px 0px 24px 12px;
     transition: all 200ms ease-in;
-
+    width: 8.75vw;
 }
 .mediumCard:hover {
     transition: all 200ms ease-in; 

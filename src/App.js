@@ -8,9 +8,11 @@ import Stats from './components/subcomponents/Stats';
 import StatsPredict from './components/StatsPredict';
 import Chart from './components/Chart';
 import ChartOne from './components/ChartOne';
-
-
+import React, {useEffect, useState} from 'react';
+import axios from './axios';
 function App() {
+
+
   return (
     <div className="app">
       <NavBar />

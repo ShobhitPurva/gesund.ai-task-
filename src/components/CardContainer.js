@@ -1,9 +1,12 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import "./CardContainer.css"
 import LargeCard from './subcomponents/LargeCard';
 import MediumCard from './subcomponents/MediumCard';
 import Fade from 'react-reveal/Fade';
+import axios from '../axios';
 function CardContainer() {
+    
+
     return (
         <div className="cardContainer">
             <div className="cardContainer__left">
