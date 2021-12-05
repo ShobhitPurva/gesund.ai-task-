@@ -26,10 +26,18 @@
 .cardContainer__left{
     display: flex;
     flex: 0.5;
-  
+    flex-wrap: wrap;
 }
 .cardContainer__right{
     display: flex;
     flex: 0.5;
+    flex-wrap: wrap;
   
+}
+
+@media(max-width: 1360px){
+    .cardContainer {
+        font-display: flex;
+        flex-wrap: wrap;
+    }
 }

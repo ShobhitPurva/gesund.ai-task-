@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     background-color: var(--hover-color);
+ 
 }
 
 .statsPredict__left{
@@ -29,4 +30,11 @@
 .statsPredict__right{
     display: flex;
 
+}
+
+@media(max-width: 1360px){
+    .statsPredict{
+        font-display: flex;
+        flex-wrap: wrap;
+    }
 }

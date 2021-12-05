@@ -19,10 +19,11 @@
 
 .chartTable{
   transition: all 250ms ease-in;
+  flex:1;
 }
 .chartTable:hover{
   transition: all 250ms ease-in;
-  transform: scale(1.02);
+ 
 }
 .chartTable > h3{
     font-family: var(--noto-sansfont);
@@ -37,12 +38,12 @@
 
 /*** Table Styles **/
 .chartTable__fill {
-  background: #515761;
+  background-color: #515761;
   border-radius:6px;
   border-collapse: collapse;
   height: 42px;
   margin: auto;
-  padding:5px;
+  padding:1px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   
 
@@ -55,7 +56,7 @@
     font-weight: bold;
     line-height: 18px;
     color: #B0B8C5;
-    padding: 10px 195px;
+    /* padding: 1vw 13vw; */
     text-align:left;
     vertical-align:middle;
     font-family: Roboto, sans-serif;
@@ -111,7 +112,7 @@
     font-weight: 500;
     line-height: 19px;
     color: var(--font-color);
-    padding: 12px 117px;
+    padding:1vw 13vw;
     text-align:center;
     vertical-align:middle;
     font-family: Roboto, sans-serif;
@@ -131,4 +132,4 @@
 }
 
 
-
+  

@@ -34,11 +34,7 @@ function ChartOne() {
                     </div>
                 </Fade>
             </div>
-            <Zoom>
-            <div className="chartOneTableContainer">
-                <ChartTable />
-            </div>
-            </Zoom>
+         
         </div>
     )
 }

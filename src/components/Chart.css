@@ -48,6 +48,8 @@
 }
 
 .chartTableContainer {
-
-    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
 }

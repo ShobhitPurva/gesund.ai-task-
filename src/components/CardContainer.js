@@ -5,8 +5,6 @@ import MediumCard from './subcomponents/MediumCard';
 import Fade from 'react-reveal/Fade';
 import axios from '../axios';
 function CardContainer() {
-    
-
     return (
         <div className="cardContainer">
             <div className="cardContainer__left">

@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
- 
+    
 }
 .infoCard__contentLeft {
     display: flex;
@@ -32,7 +32,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     padding: 12px 12px;
-
+    
 }
 .infoCard__contentRight {
     display: flex;
@@ -43,4 +43,12 @@
     border: 2px solid #424C5D;
     box-sizing: border-box;
     border-radius: 8px;
+}
+
+
+@media(max-width: 1360px){
+    .infoCard {
+        font-display: flex;
+        flex-wrap: wrap;
+    }
 }
