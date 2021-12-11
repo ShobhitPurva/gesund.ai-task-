@@ -12,7 +12,7 @@ function FilterTab() {
     return (
         <div className="filterTab">
             <Zoom>
-            <div className="filterTab__container">
+      
                 <div className="filterTab__containerLeft">
                     <select className="select" required>
                         <option value="Lorem">CovidNET</option>
@@ -30,7 +30,6 @@ function FilterTab() {
                         <FilterAltRoundedIcon style={{ color: 'white'}}/>
                     </button>
                 </div>
-            </div>
             </Zoom >
         </div>
     )

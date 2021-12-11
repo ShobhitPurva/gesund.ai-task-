@@ -17,6 +17,7 @@ function StatsPredict() {
                     <Prediction />
                 </div>
             </Fade>
+            <img />
         </div>
 
     )

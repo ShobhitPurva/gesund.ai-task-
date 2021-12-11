@@ -19,18 +19,18 @@
 .cardContainer{
     display: flex;
     align-items: center;
-    flex: 1;
-    background-color: var(--hover-color)
+    justify-content: center;
+    background-color: var(--hover-color);
+    margin-bottom: 24px;
 }
 
 .cardContainer__left{
     display: flex;
-    flex: 0.5;
+
     flex-wrap: wrap;
 }
 .cardContainer__right{
     display: flex;
-    flex: 0.5;
     flex-wrap: wrap;
   
 }

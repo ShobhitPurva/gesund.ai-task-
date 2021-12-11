@@ -20,12 +20,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid #424C5D;
-    background-color: var(--background-color);
+    width: 450px;
+    height: 140px;
+    border: 1px solid #424C5D;
     box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0500437);
     border-radius: 8px;
-    margin: 0px 12px 24px 12px;
+    background-color: var(--background-color);
     transition: all 200ms ease-in; 
+    margin-left: 12px;
+    margin-right: 12px; 
 }
 .largeCard:hover {
     transform: scale(1.06);
@@ -36,19 +40,23 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 21px 110px;
  
 }
 
 .largeCard__top{
     display: flex;
-    font-size: 16px;
+ 
     font-family: var(--noto-sansfont);
     font-style: normal;
     font-weight: bold;
+    font-size: 16px;
     line-height: 22px;
+
+    
+    letter-spacing: 0.15px;
+    
     color: var(--font-color);
-    margin-bottom: 4px;
+ 
 
 }
 
@@ -56,17 +64,20 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 4px;
 }
 
 .largeCard__middle > h2{
     font-family: var(--noto-sansfont);
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 34px;
     line-height: 46px;
+    letter-spacing: 0.25px;
     color: var(--font-color);
-    margin-right: 4px;
+    width: 107px;
+    height: 46px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 
 }
 

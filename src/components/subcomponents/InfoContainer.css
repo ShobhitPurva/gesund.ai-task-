@@ -23,29 +23,28 @@
 
 .infoContainer__text{
     font-family: var(--noto-sansfont);
-    font-weight: 700;
-    font-style: normal;
+    font-weight: bold;
     font-size: 16px;
-    line-height: 21.79px;
+    line-height: 22px;    
+    letter-spacing: 0.15px;
     color: var(--font-color);
-    padding-bottom: 12px;
+    /* padding-bottom: 12px; */
 }
 
 .infoContainer__table {
     display: flex;
     display: grid;
-    grid-template-columns:180px 180px 180px 180px ;
-    grid-template-rows: 75px 75px; 
+    grid-template-columns:218px 218px 218px 218px ;
+    grid-template-rows: 70px 70px; 
     border-radius: 1px;
-  
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
+    margin-top: 12px;
+    margin-bottom:12px;
 }
 
 .infoContainer__bottom {
     display: flex;
     flex-direction: row;
-    padding-top: 12px;
 } 

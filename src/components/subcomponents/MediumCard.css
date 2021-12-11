@@ -16,17 +16,16 @@
 }
 
 .mediumCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 2px solid #424C5D;
+    width: 213px;
+    height: 140px;
     background-color: var(--background-color);
+    border: 1px solid #424C5D;
     box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0500437);
     border-radius: 8px;
-    margin: 0px 0px 24px 12px;
-    transition: all 200ms ease-in;
-    width: 175px;
+   
+    margin-left: 12px;
+    margin-right: 12px; 
 }
 .mediumCard:hover {
     transition: all 200ms ease-in; 
@@ -39,18 +38,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 21px 19.5px 21px 19.5px;
+    padding: 24px;
 }
 
+
 .mediumCard__top{
-    display: flex;
-    font-size: 16px;
     font-family: var(--noto-sansfont);
     font-style: normal;
     font-weight: bold;
+    font-size: 16px;
     line-height: 22px;
+    letter-spacing: 0.15px;
     color: var(--font-color);
-    margin-bottom: 4px;
 
 }
 
@@ -58,18 +57,18 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 4px;
     margin-bottom: 4px;
 }
 
 .mediumCard__middle > h2{
     font-family: var(--noto-sansfont);
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 34px;
     line-height: 46px;
+    letter-spacing: 0.25px;
     color: var(--font-color);
-    margin-right: 4px;
-
 }
 
 .mediumCard__bottom{
@@ -81,19 +80,20 @@
 
 .mediumCard__bottom > p{
     font-family: var(--noto-sansfont);
+    color: #B0B8C5;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    color: #b0b8c5;
-    padding-right: 5px;
+    letter-spacing: 0.4px;
 }
 .mediumCard__bottom > h4{
     font-family: var(--noto-sansfont);
+    color: var(--font-color);
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 16px;
-    color: var(--font-color);
+    letter-spacing: 0.4px;
 }
 

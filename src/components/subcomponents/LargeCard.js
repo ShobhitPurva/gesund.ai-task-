@@ -7,7 +7,7 @@ function LargeCard({largeCardBottomText, largeCardTopText, largeCardMiddleText})
         <div className="largeCard">
             <div className="largeCard__container">
                 <h3 className="largeCard__top">{largeCardTopText}</h3>
-                <div className="largeCard__middle">
+                <div className="largeCard__middle"> 
                     <h2>{largeCardMiddleText}</h2>
                     <ArrowUpwardRoundedIcon style={{ color: "#50B04D"}}/>
                 </div>

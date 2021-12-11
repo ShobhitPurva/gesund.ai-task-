@@ -20,9 +20,13 @@
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
-    padding: 12px;
-    margin: 12px;
-    width: 100%;
+    width: 924px;
+    height: 484px;
+    padding: 24px;
+    border: 1px solid #424C5D;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0500437);
     border-radius: 8px;
 }
+
 

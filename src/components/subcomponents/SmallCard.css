@@ -20,11 +20,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 14px 4px;
+    padding: 14px;
     background-color: var(--smallCard-color);
-    margin: 1px;
     transition: all 200ms ease-in;
+    margin: 0px 1px;
 }
+
 .smallCard:hover{
     border-radius: 5px;
     border: 1px solid white;
@@ -35,23 +36,23 @@
     font-family: var(--noto-sansfont);
     font-style: normal;
     font-weight: normal;
-    font-size:  0.78125vw;
+    font-size: 13px;
     line-height: 18px;
     display: flex;
     align-items: center;
     letter-spacing: 0.08px;
     color: var(--fontDark-color);
-    margin: 4px 0px;
+    margin-bottom: 2px;
 }
 .smallCard > h3{
     font-family: var(--noto-sansfont);
     font-style: normal;
     font-weight: bold;
-    font-size:0.84635vw ;
+    font-size: 13px;
     line-height: 18px;
     display: flex;
     align-items: center;
     letter-spacing: 0.08px;
     color: var(--font-color);
-
+    margin-top: 2px;
 }

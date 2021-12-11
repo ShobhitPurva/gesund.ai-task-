@@ -12,7 +12,7 @@ function MediumCard({ mediumCardBottomText, mediumCardTopText, mediumCardMiddleT
                     <ArrowUpwardRoundedIcon style={{ color: "#50B04D"}}/>
                 </div>
                 <div className="mediumCard__bottom">
-                    <p>Traning</p>
+                    <p>Traning:</p>
                     <h4>{mediumCardBottomText}</h4>
                 </div>
             </div>

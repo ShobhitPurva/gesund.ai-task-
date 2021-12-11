@@ -22,26 +22,46 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+
     
 }
 .infoCard__contentLeft {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 12px;  
     display: flex;
-    margin: 24px 0px 24px 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 924px;
+    height: 257px;
+    padding: 24px;
     background-color: var(--background-color);
-    border: 2px solid #424C5D;
+    background: #252D3A;
+    border: 1px solid #424C5D;
     box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0500437);
     border-radius: 8px;
-    padding: 12px 12px;
     
 }
 .infoCard__contentRight {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 12px;
+    margin-right: 24px;  
     display: flex;
-    background-color: yellow;
-    margin: 24px 12px 24px 12px;
-    padding: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 924px;
+    height: 257px;
+    padding: 24px;
     background-color: var(--background-color);
-    border: 2px solid #424C5D;
+    background: #252D3A;
+    border: 1px solid #424C5D;
     box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0500437);
     border-radius: 8px;
 }
 

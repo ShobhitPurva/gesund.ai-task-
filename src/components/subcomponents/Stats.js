@@ -16,7 +16,7 @@ function Stats() {
                 
                 <div className="stats__rightContainer">
                     <CustomTable />
-                </div>
+                </div> 
             </div>
           
             

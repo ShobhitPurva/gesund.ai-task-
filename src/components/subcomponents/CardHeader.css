@@ -31,10 +31,11 @@
 .cardHeader__containerLeft > p{
     display: flex;
     font-family: var(--noto-sansfont);
-    font-weight: 700;
-    font-size: normal;
+    font-style: normal;
+    font-weight: bold;
     font-size: 16px;
-    line-height: 21.79px;
+    line-height: 22px;   
+    letter-spacing: 0.15px;    
     color: var(--font-color)
 }
 
@@ -45,9 +46,9 @@
 }
 .cardHeader__containerRight>button {
     background: #1D9E76;
+    width: 44px;
+    height: 44px;
     border-radius: 6px;
-    height: 32px;
-    width: 32px;
     border: none;
     cursor: pointer;
     margin-left: 12px;
