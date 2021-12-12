@@ -24,7 +24,7 @@ export default function CustomTable() {
           </tr>
         </thead>
         <tbody class="table__hover">
-          <tr>
+          <tr style={{ borderBottom: "1px solid #424C5D", borderTop:"1px solid #424C5D" }}>
             <td class="text__topFirst" style={{
               color: 'white',
             }}>Normal</td>

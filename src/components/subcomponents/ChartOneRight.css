@@ -2,6 +2,7 @@
 :root {
     --navbar-height: 5.2083vw !important;
     --background-color: #252D3A !important;
+    --smallCard-color: #3B424E !important;
     --hover-color: #191F28 !important;
     --bottom-color: #424C5D !important;
     --font-color: #FFFFFF !important;
@@ -10,12 +11,22 @@
     --nav-button-paddingHorizontal: 1.0742vw !important;
     --nav-button-paddingVertical:  1.0416vw !important;
     --noto-sansfont: 'Noto Sans', sans-serif;
-    --noto-sansfont: 'Roboto', sans-serif;
+    --roboto-sansfont: 'Roboto', sans-serif;
+    --fontDark-color: #92969D !important;
 }
 
-.app{
-    background-color: var(--hover-color);
 
+.chartOneRight{
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
+    width: 924px;
+    
+    padding: 24px;
+    border: 1px solid #424C5D;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0500437);
+    border-radius: 8px;
 }
+
+

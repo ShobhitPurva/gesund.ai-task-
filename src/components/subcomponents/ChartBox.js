@@ -1,10 +1,10 @@
 import React from 'react';
 import './ChartBox.css';
 
-function ChartBox() {
+function ChartBox({chartBoxText}) {
     return (
         <div className="chartBox">
-            <p>Chart box</p>
+            <p>{chartBoxText}</p>
         </div>
     )
 }

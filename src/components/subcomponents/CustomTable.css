@@ -44,7 +44,7 @@
   border-collapse: collapse;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   transition: all 250ms ease-in;
-  border-top: 1px solid #424C5D;
+
   
 }
 
@@ -53,7 +53,7 @@
   
 tr {
   /* border-top: 1px solid #515761; */
-  border-bottom: 1px solid #424C5D;
+  
   border-radius: 6px;
   color:#666B85;
   font-size:16px;

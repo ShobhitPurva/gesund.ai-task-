@@ -5,33 +5,45 @@ import ChartElement from './subcomponents/ChartElement';
 import ChartTable from './subcomponents/ChartTable';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
+import { ScatterChart } from './subcomponents/ScatterChart';
+import { StackedBarChart } from './subcomponents/StackedBarChart';
+import CardHeader  from './subcomponents/CardHeader';
+
 function Chart() {
     return (
         <div className="chart">
-            <p>Basic Data Stats</p>
-            
-            <div className="chart__container">
+            <div style={{ padding:'24px 24px 16px 24px', width: '1820px'}}>
+                <CardHeader cardHeaderText="Basic Data Stats"/>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                 <Fade>
-                    <div className="chart__containerLeft">
-                        <ChartBox />
+                    <div style={{ padding: '0px 12px 0px 0px'}}>
+                        <ChartBox chartBoxText='Class Distribution'/>
                     </div>
-                    
-
-                    <div className="chart__containerRight">
-                        <ChartBox />
+                    <div style={{ padding: '0px 0px 0px 12px' }}>
+                        <ChartBox chartBoxText='Color Distribution'/>
                     </div>
                 </Fade>
             </div>
             
-            <div style={{ display: 'flex' }}>
-                <div style={{ flex: 0.5 }}>
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',}}>
+                <div style={{ width: '924px', alignItems: 'center', flexDirection: 'column'}}>
+                    {/* <ChartBox /> */}
                     <Fade left>
-                    <ChartElement color1='#ACB9FF' color2="#503795" />
+                        <div style={{ padding: '0px 12px 12px 24px',}}>
+                            <StackedBarChart />
+                        </div>
                     </Fade>
                 </div>
-                <div style={{ flex: 0.5 }}>
+               
+                <div style={{ width: '924px', alignItems: 'center', flexDirection: 'column'}}>
                     <Fade right>
-                    <ChartElement color1="#BCFFF8" color2="#19B6A4" />
+                        {/* <ChartBox /> */}
+                        <div style={{ padding: '0px 24px 12px 12px', }}>
+                            <ScatterChart />
+                        </div>
+                   
+                    
                     </Fade>
                 </div>
             </div>

@@ -21,7 +21,10 @@ function App() {
       <CardContainer />
       <StatsPredict />
       <ChartOne />
-      <Chart />
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <Chart />
+      </div>
+      
     </div>
   );
 }

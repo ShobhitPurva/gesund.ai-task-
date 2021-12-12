@@ -11,9 +11,9 @@ function CardHeader({ cardHeaderText }) {
                     <p>{cardHeaderText}</p>
                 </div>
                 <div className="cardHeader__containerRight">
-                    <PushPinOutlinedIcon style={{ color: 'white'}} />
+                    <img src="/images/pin.svg" style={{ color: 'white'}} />
                     <button>
-                        <FilterAltRoundedIcon style={{ color: 'white'}}/>
+                        <img src="/images/filter.svg" style={{ color: 'white'}}/>
                     </button>
                 </div>
             </div>

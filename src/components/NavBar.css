@@ -15,34 +15,21 @@
 
 .navbar{
     display: flex;
-    flex: 1;
     flex-direction: row;
     background-color: var(--background-color);
     color: var(--font-color);    
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    padding: 20px 24px 20px 24px;   
+    max-height: 80px;
     /* height: var(--navbar-height); */
-    padding: 14px 0px
+    
 }
-.navbar__left{
-    flex: 0.2;
-    display: flex;
-    font-size: 16px;
-    justify-content: center;
-    font-family: 'Noto Sans', sans-serif;
 
-}
-.navbar__middle{
-    flex: 0.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-}
+
 
 .navbar__button{
-    padding: 16.5px 16px ;
+    padding: 14px 16px 14px 16px ;
     font-size: var(--nav-font-size);
     display: flex;
     align-items: center;
@@ -63,9 +50,20 @@
   
 }
 
-.navbar__buttonText {
-    padding: 4px;
+.navbar__buttonText{
+    font-style: var(--noto-sansfont);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+
+
+    letter-spacing: 0.25px;
+
+
+    color: #FFFFFF;
 }
+
 
 /* .navbar__space {
     display: flex;
@@ -73,19 +71,20 @@
 } */
 
 .navbar__right{
-   
-    flex: 0.2;
-    justify-content: center;
+    width: 212px;
+    height: 48px;
+
+    justify-content: space-between;
     align-items: center;
     display: flex;
 }
 .navbar__rightButton{
-    margin: 0px 12px;
+    /* margin: 0px 12px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 8px;
+    /* padding: 8px 8px; */
     border: 2px solid #707986;
     border-radius: 8px;
     background-color: var(--drop-button-color);
@@ -94,10 +93,13 @@
     font-style: normal;
     font-size: 14px;
     line-height: 20px;
+    width: 164px;
+    height: 48px;
 }
 .navbar__rightButton > p {
     color: var(--font-color);
-    margin: 0px 6px;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 
 .navbar__button:hover {

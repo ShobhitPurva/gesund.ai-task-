@@ -19,7 +19,7 @@
 
 .chartTable{
   transition: all 250ms ease-in;
-  flex:1;
+
 }
 .chartTable:hover{
   transition: all 250ms ease-in;
@@ -37,31 +37,14 @@
 }
 
 /*** Table Styles **/
-.chartTable__fill {
-  background-color: #515761;
-  border-radius:6px;
-  border-collapse: collapse;
-  height: 42px;
-  margin: auto;
-  padding:1px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  
 
-}
  
 .chart__left {
-    color:#344055;;
     background:#344055;
-    font-size:12px;
-    font-weight: bold;
-    line-height: 18px;
+    width: 607.33px;  
+    height: 69px;
     color: #B0B8C5;
-    /* padding: 1vw 13vw; */
-    text-align:left;
-    vertical-align:middle;
-    font-family: Roboto, sans-serif;
-    text-align:center;
-    
+
 }
 
 .chart__left > h3{
@@ -75,14 +58,14 @@
 }
 .chart__left > h4{
     font-family: var(--noto-sansfont);
-    font-style: normal;
-    font-weight: 500;
+    font-style: normal; 
+    font-weight: normal;
     font-size: 12px;
     line-height: 18px;
     color: var(--fontDark-color);
 }
 
-.chart__left:first-child {
+/* .chart__left:first-child {
   border-top-left-radius:3px;
   border-left: 1px solid #515761;
 }
@@ -91,7 +74,7 @@
   border-top-right-radius:3px;
   border-right: 1px solid #515761;
 }
-  
+   */
 .chart__hover > tr {
   border-top: 1px solid #515761;
   border-bottom: 1px solid #515761;
@@ -106,17 +89,20 @@
 }
     
 .chartText__left {
-  
-    background: var(--background-color);
+    width: 608px;
+    height: 42.2px;
+
     font-size:14px;
     font-weight: 500;
     line-height: 19px;
     color: var(--font-color);
-    padding:1vw 13vw;
     text-align:center;
     vertical-align:middle;
     font-family: Roboto, sans-serif;
     justify-content: center;
+    background: #252D3A;
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.25);
+
     /* background:#252D3A;
     padding: 12px 10px;
     text-align:left;

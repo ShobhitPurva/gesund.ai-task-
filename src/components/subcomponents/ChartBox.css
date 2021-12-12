@@ -16,8 +16,11 @@
 }
 .chartBox {
     background-color: #344055;
-    margin: 12px;
-    padding: 12px;
+    width: 900px;
+    height: 47px;
+    background: #344055;
+
+    /* padding: 12px; */    
 }
 
 .chartBox > p {
@@ -26,4 +29,5 @@
     font-style: normal;
     font-weight: 500;
     line-height: 19px;
+    padding: 14px;
 }

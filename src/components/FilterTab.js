@@ -27,7 +27,7 @@ function FilterTab() {
                 </div>
                 <div className="filterTab__containerFilter">
                     <button>
-                        <FilterAltRoundedIcon style={{ color: 'white'}}/>
+                        <img src="/images/filter.svg" style={{ width:'15px', height:'15px',color: 'white'}}/>
                     </button>
                 </div>
             </Zoom >

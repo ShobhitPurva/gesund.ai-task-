@@ -4,14 +4,14 @@ import './ChartTable.css'
 export default function ChartTable() {
   return (
     <div className="chartTable">
-      <table class="chart__fill">
+    
         <thead>
           <tr>
             <th class="chart__left">
                 <h4>Training Set</h4>
                 <h3>hospital_12</h3>
             </th>
-            <th class="chart__left">
+            <th class="chart__left" style={{borderLeft:'1px solid #191F28', borderRight:'1px solid #191F28'}}>
             
                 <h3>Population Composition</h3>
             </th>
@@ -48,7 +48,7 @@ export default function ChartTable() {
             <td class="chartText__left">6%</td>
           </tr>
         </tbody>
-    </table>
+    
     </div> 
   );
 }

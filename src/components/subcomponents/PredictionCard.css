@@ -40,13 +40,24 @@
     margin-left: 12px;
 }
 
+
+.predictionCard__imageContainer{
+    border-radius:5px;
+    width: inherit;
+    width: 201px;
+    height: 124px;
+    margin-bottom: 2px;
+    position: relative;
+}
 .predictionCard__image {
     border-radius:5px;
     width: inherit;
     width: 201px;
     height: 124px;
     margin-bottom: 2px;
-
+    position: absolute;
+    display: block;
+    backface-visibility: hidden;
 }
 
 .predictionCard__info{
@@ -59,4 +70,33 @@
     color: var(--font-color);
     margin-top: 2px;
     margin-bottom: 2px;
+}
+
+.predictionCard__imageOverlay{
+    opacity: 0;
+    position: absolute;
+    width: 201px;
+    height: 124px;
+    transition: .5s ease;
+    background: linear-gradient(180deg, #3573F9 0%, #3655F9 100%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}   
+.predictionCard__imageOverlaySearch{
+    width: 20.31px;
+    height: 20.31px;
+}
+
+.predictionCard__container:hover .predictionCard__imageOverlay{
+    opacity: 0.8;
+    transition: all 200ms ease-in; 
+    transform: scale(1.02);
+}
+.predictionCard__container:hover .predictionCard__image{
+
+    transition: all 200ms ease-in; 
+    transform: scale(1.02);
 }

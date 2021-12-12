@@ -15,46 +15,29 @@
     --fontDark-color: #92969D !important;
 }
 .chartOne {
+    display: flex;
+    align-items: center;
     background-color: var(--hover-color);
-    
-    border-radius: 6px;
-    /* height: 50vh; */
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    
-
-}
-
-.chartOne > p {
-    color: var(--font-color);
-    font-family: var(--noto-sansfont);
-    font-style: normal;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 24px 0px 12px 12px;
-}
-
-.chartOne__container {
-    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
 }
 
 .chartOne__containerLeft {
-    margin: 10px;
-    padding: 10px;
-    flex: 0.5;
-    border-radius: 6px;
-    background-color: var(--background-color);
+    /* margin: 10px;
+    padding: 10px; */
+    margin-right: 12px;
+    flex-direction: row;
 }
 
 .chartOne__containerRight {
-    padding: 10px;
-    margin: 10px;
-    flex: 0.5;
-    border-radius: 6px;
-    background-color: var(--background-color);
+    /* padding: 10px;
+    margin: 10px; */
+    /* height: 457px; */
+    margin-left: 12px;
 }
 
 .chartOneTableContainer {
-    padding: 12px;
+    /* padding: 12px; */
 }
