@@ -20,7 +20,7 @@
     color: var(--font-color);    
     align-items: center;
     justify-content: space-between;
-    padding: 20px 24px 20px 24px;   
+    padding: 14px 24px 14px 24px;   
     max-height: 80px;
     /* height: var(--navbar-height); */
     
@@ -29,7 +29,7 @@
 
 
 .navbar__button{
-    padding: 14px 16px 14px 16px ;
+    padding: 16.5px 16px 16.5px 16px ;
     font-size: var(--nav-font-size);
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@
 }
 .navbar__button:hover{
     transition: all 250ms ease-in; 
-  
+    
 }
 
 .navbar__buttonText{

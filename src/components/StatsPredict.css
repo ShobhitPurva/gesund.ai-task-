@@ -35,9 +35,9 @@
     margin-left: 12px;
 }
 
-@media(max-width: 1360px){
+@media(max-width: 1600px){
     .statsPredict{
-        font-display: flex;
+        display: flex;
         flex-wrap: wrap;
     }
 }

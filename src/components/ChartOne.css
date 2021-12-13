@@ -41,3 +41,10 @@
 .chartOneTableContainer {
     /* padding: 12px; */
 }
+
+@media(max-width: 1600px){
+    .chartOne {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

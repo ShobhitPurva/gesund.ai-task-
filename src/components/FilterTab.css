@@ -118,3 +118,11 @@
     transform: scale(1.06);
 
 }
+
+
+@media(max-width: 1600px){
+    .filterTab {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

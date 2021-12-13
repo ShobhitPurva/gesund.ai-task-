@@ -66,9 +66,9 @@
 }
 
 
-@media(max-width: 1360px){
+@media(max-width: 1600px){
     .infoCard {
-        font-display: flex;
+        display: flex;
         flex-wrap: wrap;
     }
 }

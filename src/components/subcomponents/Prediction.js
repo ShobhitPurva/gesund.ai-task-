@@ -8,6 +8,7 @@ import PushPinOutlinedIcon from '@mui/icons-material/PushPinOutlined';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import FilterAltRoundedIcon from '@mui/icons-material/FilterAltRounded';
 import "./Prediction.css";
+import Loading from '../Loading';
 
 
 function Prediction() {
@@ -62,22 +63,22 @@ function Prediction() {
 
 
     //pushers
-    // useEffect(() => {
-    //     const pusher = new Pusher('f49e8f36a6eb9b4d7cb0', {
-    //         cluster: 'ap2'
-    //       });
+    useEffect(() => {
+        const pusher = new Pusher('f49e8f36a6eb9b4d7cb0', {
+            cluster: 'ap2'
+          });
         
-    //     const channel = pusher.subscribe('cards');
-    //     channel.bind('inserted',(newPredictionCard) => {
-    //         alert(JSON.stringify(newPredictionCard));
-    //         setPredictionCard([...predictionCard, newPredictionCard])
-    //     });
+        const channel = pusher.subscribe('cards');
+        channel.bind('inserted',(newItems) => {
+            alert(JSON.stringify(newItems));
+            setPredictionCard([...items, newItems])
+        });
 
-    //     return () => {
-    //         channel.unbind_all();
-    //         channel.unsubscribe();
-    //     }
-    // },[predictionCard])
+        return () => {
+            channel.unbind_all();
+            channel.unsubscribe();
+        }
+    },[items])
   
     // console.log(predictionCard );
 
@@ -106,7 +107,7 @@ function Prediction() {
                     dataLength={items.length} //This is important field to render the next data
                     next={fetchData}
                     hasMore={noMore}
-                    loader={<h4>Loading..</h4>}
+                    loader={<Loading />}
                     scrollableTarget="scrollableDiv"
                     // endMessage={
                     //   <p style={{ textAlign: 'center' }}>

@@ -14,7 +14,11 @@ function MediumCard({ mediumCardBottomText, mediumCardTopText, mediumCardMiddleT
                         alignItems: 'center',
                     }}>
                     <h2>{mediumCardMiddleText}</h2>
-                    <img src='/images/rising.svg' style={{ width: '10.02px', height: '10.02px', paddingTop: '5px', paddingBottom: '30.98px', paddingLeft: '5px',}}/>
+                    <img src='/images/rising.svg' style={{ width: '10.02px', 
+                        height: '10.02px', 
+                        paddingTop: '5px', 
+                        paddingBottom: '30.98px', 
+                        paddingLeft: '5px',}}/>
                 </div>
                 <div className="mediumCard__bottom">
                     <p>Traning:</p>

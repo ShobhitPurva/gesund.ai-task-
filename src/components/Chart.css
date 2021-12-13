@@ -31,8 +31,6 @@
 .chart > p {
     color: var(--font-color);
     font-family: var(--noto-sansfont);
-
- 
 }
 
 .chart__container {
@@ -43,3 +41,4 @@
 .chartTableContainer {
     margin-bottom: 24px;
 }
+
