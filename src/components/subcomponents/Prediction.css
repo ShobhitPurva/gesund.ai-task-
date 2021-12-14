@@ -64,6 +64,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-right: 24px;
 }
 .predictionHeader__rightItem {
    display: flex;

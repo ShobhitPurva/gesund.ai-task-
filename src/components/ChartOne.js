@@ -11,14 +11,18 @@ import ChartOneRight from './subcomponents/ChartOneRight';
 function ChartOne() {
     return (
         <div className="chartOne">
-            <Fade left>
+            
                 <div className="chartOne__containerLeft">
+                <Fade left>
                     <ChartOneLeft />
+                </Fade>
                 </div>
                 <div className="chartOne__containerRight">
+                <Fade right>
                    <ChartOneRight />
+                </Fade>
                 </div>
-            </Fade>
+
          
         </div>
     )
