@@ -38,11 +38,14 @@ function CardContainer() {
                     largeCardTopText = "Avg. F1"
                     largeCardMiddleText ="0.8001"
                     largeCardBottomText = "0.779"
+                    rising ="/images/rising.svg"
+                    traning = "Traning"
                 />
                 <LargeCard
-                    largeCardTopText = "AUC"
-                    largeCardMiddleText ="0.8104"
-                    largeCardBottomText = "0.7967"
+                    largeCardTopText = "Kolmogorov-Smirnov Test"
+                    largeCardMiddleText ="0.4125"
+        
+                
                 />
                 </Fade>
             </div>
